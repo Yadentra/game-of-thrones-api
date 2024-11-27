@@ -56,27 +56,27 @@ This **Game of Thrones API** allows users to interact with a list of characters 
 ### 6. **Add a new character to the list**
 - **POST `/characters`**
 - **Request Body**:
-json
+**json
   {
     "id": <uniqueid>,
     "name": "<charactername>",
     "house": "<characterhouse>",
     "age": <age>,
     "role": "<characterrole>"
-  }
+  }**
 
 - **Description**: Adds a new character to the list. The server validates that all fields are properly filled.
 
 ### 7. **Edit a character**
 - **PATCH `/characters/<int:id>`**
 - **Request Body**:
-json
+**json
   {
     "name": "<newname>",
     "house": "<newhouse>",
     "age": <newage>,
     "role": "<newrole>"
-  }
+  }**
 
 - **Description**: Edits an existing character by their `id`.
 
@@ -85,7 +85,7 @@ json
 - **Description**: Deletes a character from the list by their `id`.
 
 ## Project Structure
-game-of-thrones-api/
+**game-of-thrones-api/
 ├── app/
 │   ├── init.py      # Contains createapp function to initialize the Flask app
 │   ├── models.py        # Data models for character information
@@ -95,7 +95,7 @@ game-of-thrones-api/
 │   ├── testroutes.py   # Unit tests for routes
 ├── requirements.txt     # Project dependencies
 ├── README.md            # Project documentation
-└── run.py               # Entry point to run the Flask application
+└── run.py               # Entry point to run the Flask application**
 
 ## Dependencies
 This project requires the following Python packages:
@@ -119,12 +119,12 @@ This project uses pytest for testing.
 3. `pytest` will automatically discover all files that start with `test_` or end with `_test.py`, and it will execute all test functions within them.
 
 The output will look something like this:
-==================== test session starts ====================
+**==================== test session starts ====================
 collected 3 items
 
 test_routes.py ...          [100%]
 
-==================== 3 passed in 0.03 seconds ================
+==================== 3 passed in 0.03 seconds ================**
 
 ### Interpreting Test Results
 - `.` (dot) means the test passed.
