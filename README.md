@@ -56,8 +56,7 @@ This **Game of Thrones API** allows users to interact with a list of characters 
 ### 6. **Add a new character to the list**
 - **POST `/characters`**
 - **Request Body**:
-
-   json
+json
   {
     "id": <uniqueid>,
     "name": "<charactername>",
@@ -71,8 +70,7 @@ This **Game of Thrones API** allows users to interact with a list of characters 
 ### 7. **Edit a character**
 - **PATCH `/characters/<int:id>`**
 - **Request Body**:
-
-  json
+json
   {
     "name": "<newname>",
     "house": "<newhouse>",
@@ -87,7 +85,6 @@ This **Game of Thrones API** allows users to interact with a list of characters 
 - **Description**: Deletes a character from the list by their `id`.
 
 ## Project Structure
-
 game-of-thrones-api/
 ├── app/
 │   ├── init.py      # Contains createapp function to initialize the Flask app
