@@ -56,14 +56,14 @@ This **Game of Thrones API** allows users to interact with a list of characters 
 ### 6. **Add a new character to the list**
 - **POST `/characters`**
 - **Request Body**:
-**json
+json
   {
     "id": <uniqueid>,
     "name": "<charactername>",
     "house": "<characterhouse>",
     "age": <age>,
     "role": "<characterrole>"
-  }**
+  }
 
 - **Description**: Adds a new character to the list. The server validates that all fields are properly filled.
 
